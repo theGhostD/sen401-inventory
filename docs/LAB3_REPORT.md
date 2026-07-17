@@ -28,7 +28,7 @@ git add -A && git commit -m "Initial commit: starter inventory project"
 git checkout -b dev
 ```
 
-> **[SCREENSHOT 3.1]** — VS Code Explorer showing the project structure.
+> **[SCREENSHOT 3.1]** — IDE file explorer showing the project structure.
 
 ## 3. Maintenance Tasks Performed (on `dev`)
 

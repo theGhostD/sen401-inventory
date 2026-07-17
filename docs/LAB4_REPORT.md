@@ -44,7 +44,7 @@ DRY, docstrings, and type hints applied throughout. The duplicated
 `quantity * price` logic now lives in exactly one place
 (`Item.line_value`).
 
-> **[SCREENSHOT 4.3]** — VS Code Explorer showing the refactored module structure.
+> **[SCREENSHOT 4.3]** — IDE file explorer showing the refactored module structure.
 
 ## 4. Data Migration to SQLite
 
