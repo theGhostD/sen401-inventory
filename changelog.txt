@@ -1,0 +1,6 @@
+f8c2ac6 | David Ojekale | 2026-07-17 | Merge branch 'dev': all four maintenance tasks complete
+9afd57b | David Ojekale | 2026-07-17 | Preventive maintenance: refactor for modularity and maintainability
+b2dc46a | David Ojekale | 2026-07-17 | Perfective maintenance: currency-formatted inventory table
+dfa7614 | David Ojekale | 2026-07-17 | Adaptive maintenance: Python 3.12 type hints and low-stock alert feature
+3705a4d | David Ojekale | 2026-07-17 | Corrective maintenance: fix total stock value calculation and input bugs
+a77dffc | David Ojekale | 2026-07-17 | Initial commit: starter inventory project
