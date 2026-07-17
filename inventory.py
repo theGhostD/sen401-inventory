@@ -12,9 +12,18 @@ inventory = [
 def total_stock_value(items):
     total = 0
     for item in items:
-        total += item["price"]
+        # Corrective maintenance: value = quantity * price (price alone
+        # under-reported the total stock value)
+        total += item["quantity"] * item["price"]
     return total
 
 
 def add_item(item_name, quantity, price):
+    # Corrective maintenance: validate input before storing
+    if not item_name or not isinstance(item_name, str):
+        raise ValueError("item_name must be a non-empty string")
+    if not isinstance(quantity, int) or quantity < 0:
+        raise ValueError("quantity must be a non-negative integer")
+    if not isinstance(price, (int, float)) or price < 0:
+        raise ValueError("price must be a non-negative number")
     inventory.append({"item_name": item_name, "quantity": quantity, "price": price})
