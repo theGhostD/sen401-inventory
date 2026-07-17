@@ -2,7 +2,7 @@
 
 **Course:** SEN 401 — Software Configuration Management and Maintenance
 **Student:** `[YOUR FULL NAME]` — Matric No: `[YOUR MATRIC NUMBER]`
-**Repository:** `[GITHUB REPO URL]`
+**Repository:** <https://github.com/theGhostD/sen401-inventory>
 
 ## 1. Objective
 
