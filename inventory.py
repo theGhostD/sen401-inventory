@@ -26,6 +26,21 @@ def total_stock_value(items: list[Item]) -> float:
     return total
 
 
+def format_inventory_table(items: list[Item]) -> str:
+    # Perfective maintenance: aligned table with currency formatting
+    if not items:
+        return "(inventory is empty)"
+    header = f"{'Item':<12} {'Qty':>5} {'Unit Price (NGN)':>18} {'Line Value (NGN)':>18}"
+    lines = [header, "-" * len(header)]
+    for item in items:
+        value = item["quantity"] * item["price"]
+        lines.append(
+            f"{item['item_name']:<12} {item['quantity']:>5} "
+            f"{item['price']:>18,.2f} {value:>18,.2f}"
+        )
+    return "\n".join(lines)
+
+
 def add_item(item_name: str, quantity: int, price: float) -> None:
     # Corrective maintenance: validate input before storing
     if not item_name or not isinstance(item_name, str):
