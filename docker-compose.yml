@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    container_name: inventory-app
+    environment:
+      INVENTORY_DB: /data/inventory.db
+    volumes:
+      - inventory-data:/data
+
+  db-browser:
+    image: coleifer/sqlite-web:latest
+    container_name: inventory-db-browser
+    command: ["sqlite_web", "--host", "0.0.0.0", "--port", "8080", "/data/inventory.db"]
+    ports:
+      - "8080:8080"
+    volumes:
+      - inventory-data:/data
+    depends_on:
+      - app
+
+volumes:
+  inventory-data:
