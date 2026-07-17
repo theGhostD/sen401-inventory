@@ -1,6 +1,9 @@
 # inventory.py - data module for the inventory demo app
+# Adaptive maintenance: Python 3.12 type hints + low-stock alert feature
 
-inventory = [
+type Item = dict[str, str | int | float]
+
+inventory: list[Item] = [
     {"item_name": "Laptop", "quantity": 4, "price": 350000.00},
     {"item_name": "Mouse", "quantity": 25, "price": 4500.00},
     {"item_name": "Keyboard", "quantity": 18, "price": 12000.00},
@@ -9,7 +12,12 @@ inventory = [
 ]
 
 
-def total_stock_value(items):
+def low_stock_items(items: list[Item], threshold: int = 5) -> list[Item]:
+    # Adaptive maintenance: new re-order alert feature
+    return [item for item in items if item["quantity"] <= threshold]
+
+
+def total_stock_value(items: list[Item]) -> float:
     total = 0
     for item in items:
         # Corrective maintenance: value = quantity * price (price alone
@@ -18,7 +26,7 @@ def total_stock_value(items):
     return total
 
 
-def add_item(item_name, quantity, price):
+def add_item(item_name: str, quantity: int, price: float) -> None:
     # Corrective maintenance: validate input before storing
     if not item_name or not isinstance(item_name, str):
         raise ValueError("item_name must be a non-empty string")
