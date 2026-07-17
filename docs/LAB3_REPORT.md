@@ -34,10 +34,10 @@ git checkout -b dev
 
 | Type | Change | Commit |
 |------|--------|--------|
-| Corrective | `total_stock_value()` summed unit prices only, under-reporting stock value (463,000 → **2,483,500** for the seed data). Fixed to quantity × price; `add_item()` now validates input. | `3705a4d` |
-| Adaptive | Python 3.12 type hints (PEP 695 `type Item` alias); new `low_stock_items()` re-order alert feature. | `dfa7614` |
-| Perfective | `format_inventory_table()` — aligned columns, thousands separators, per-line value; labelled output sections. | `b2dc46a` |
-| Preventive | Refactor: DRY `line_value()` helper, docstrings throughout, `main()` guard, clear `ValueError` on empty inventory. | `9afd57b` |
+| Corrective | `total_stock_value()` summed unit prices only, under-reporting stock value (463,000 → **2,483,500** for the seed data). Fixed to quantity × price; `add_item()` now validates input. | `e90144e` |
+| Adaptive | Python 3.12 type hints (PEP 695 `type Item` alias); new `low_stock_items()` re-order alert feature. | `e9efde0` |
+| Perfective | `format_inventory_table()` — aligned columns, thousands separators, per-line value; labelled output sections. | `df06490` |
+| Preventive | Refactor: DRY `line_value()` helper, docstrings throughout, `main()` guard, clear `ValueError` on empty inventory. | `7cb86ec` |
 
 > **[SCREENSHOT 3.2]** — Terminal output of `python3.12 app.py` after all maintenance.
 
@@ -63,25 +63,25 @@ git log --pretty=format:"%h | %an | %ad | %s" --date=short > changelog.txt
 Contents of `changelog.txt`:
 
 ```
-f8c2ac6 | David Ojekale | 2026-07-17 | Merge branch 'dev': all four maintenance tasks complete
-9afd57b | David Ojekale | 2026-07-17 | Preventive maintenance: refactor for modularity and maintainability
-b2dc46a | David Ojekale | 2026-07-17 | Perfective maintenance: currency-formatted inventory table
-dfa7614 | David Ojekale | 2026-07-17 | Adaptive maintenance: Python 3.12 type hints and low-stock alert feature
-3705a4d | David Ojekale | 2026-07-17 | Corrective maintenance: fix total stock value calculation and input bugs
-a77dffc | David Ojekale | 2026-07-17 | Initial commit: starter inventory project
+3d2a33a | David Ojekale | 2026-07-17 | Merge branch 'dev': all four maintenance tasks complete
+7cb86ec | David Ojekale | 2026-07-17 | Preventive maintenance: refactor for modularity and maintainability
+df06490 | David Ojekale | 2026-07-17 | Perfective maintenance: currency-formatted inventory table
+e9efde0 | David Ojekale | 2026-07-17 | Adaptive maintenance: Python 3.12 type hints and low-stock alert feature
+e90144e | David Ojekale | 2026-07-17 | Corrective maintenance: fix total stock value calculation and input bugs
+367ca71 | David Ojekale | 2026-07-17 | Initial commit: starter inventory project
 ```
 
 `git log --oneline --graph --all`:
 
 ```
-*   f8c2ac6 Merge branch 'dev': all four maintenance tasks complete
+*   3d2a33a Merge branch 'dev': all four maintenance tasks complete
 |\
-| * 9afd57b Preventive maintenance: refactor for modularity and maintainability
-| * b2dc46a Perfective maintenance: currency-formatted inventory table
-| * dfa7614 Adaptive maintenance: Python 3.12 type hints and low-stock alert feature
-| * 3705a4d Corrective maintenance: fix total stock value calculation and input bugs
+| * 7cb86ec Preventive maintenance: refactor for modularity and maintainability
+| * df06490 Perfective maintenance: currency-formatted inventory table
+| * e9efde0 Adaptive maintenance: Python 3.12 type hints and low-stock alert feature
+| * e90144e Corrective maintenance: fix total stock value calculation and input bugs
 |/
-* a77dffc Initial commit: starter inventory project
+* 367ca71 Initial commit: starter inventory project
 ```
 
 > **[SCREENSHOT 3.3]** — Terminal showing `git log --oneline`.

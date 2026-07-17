@@ -30,7 +30,7 @@ Mermaid dependency and UML-style diagrams is in
 
 ## 3. Refactor & Modularize
 
-The code was split by responsibility (commit `0413430`):
+The code was split by responsibility (commit `650bd58`):
 
 | Module | Responsibility |
 |--------|----------------|
@@ -106,8 +106,8 @@ docker compose logs app     # migration + demo output
 ## 6. Version Control
 
 ```
-0413430 Lab 4 steps 2-3: refactor into models/controllers/utils and migrate to SQLite
-b8b9879 Lab 4 step 1: reverse engineering analysis with dependency diagrams
+650bd58 Lab 4 steps 2-3: refactor into models/controllers/utils and migrate to SQLite
+7df6f65 Lab 4 step 1: reverse engineering analysis with dependency diagrams
 ```
 
 Work merged from `reengineering` into `main` and tagged **v2.0**.

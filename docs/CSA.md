@@ -19,25 +19,25 @@ and in which release it shipped.
 
 | Commit | Branch | Maintenance task | Configuration items affected | Release |
 |--------|--------|------------------|------------------------------|---------|
-| `a77dffc` | `main` | Baseline (starter code) | all | — |
-| `3705a4d` | `dev` | **Corrective** — fixed total stock value calculation (quantity × price) and input validation | `inventory.py` | v1.0 |
-| `dfa7614` | `dev` | **Adaptive** — Python 3.12 type hints, new low-stock alert feature | `inventory.py`, `app.py` | v1.0 |
-| `b2dc46a` | `dev` | **Perfective** — currency-formatted inventory table | `inventory.py`, `app.py` | v1.0 |
-| `9afd57b` | `dev` | **Preventive** — refactor, DRY `line_value()`, docstrings, `main()` guard | `inventory.py`, `app.py`, `utils/helpers.py` | v1.0 |
-| `f8c2ac6` | `main` | Merge `dev` → `main` (all maintenance complete) | — | v1.0 |
+| `367ca71` | `main` | Baseline (starter code) | all | — |
+| `e90144e` | `dev` | **Corrective** — fixed total stock value calculation (quantity × price) and input validation | `inventory.py` | v1.0 |
+| `e9efde0` | `dev` | **Adaptive** — Python 3.12 type hints, new low-stock alert feature | `inventory.py`, `app.py` | v1.0 |
+| `df06490` | `dev` | **Perfective** — currency-formatted inventory table | `inventory.py`, `app.py` | v1.0 |
+| `7cb86ec` | `dev` | **Preventive** — refactor, DRY `line_value()`, docstrings, `main()` guard | `inventory.py`, `app.py`, `utils/helpers.py` | v1.0 |
+| `3d2a33a` | `main` | Merge `dev` → `main` (all maintenance complete) | — | v1.0 |
 
 ## Branch Status
 
 | Branch | Purpose | Status |
 |--------|---------|--------|
-| `main` | Stable baseline; releases tagged here | at `f8c2ac6`, tagged `v1.0` |
+| `main` | Stable baseline; releases tagged here | at `3d2a33a`, tagged `v1.0` |
 | `dev` | Maintenance work | merged into `main` |
 
 ## Release Status
 
 | Release | Commit | Contents |
 |---------|--------|----------|
-| `v1.0` | `f8c2ac6` | Starter code + all four maintenance tasks |
+| `v1.0` | `3d2a33a` | Starter code + all four maintenance tasks |
 
 ## Audit Trail
 
