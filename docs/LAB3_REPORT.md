@@ -1,7 +1,7 @@
 # Lab 3 — Status Accounting & Auditing
 
 **Course:** SEN 401 — Software Configuration Management and Maintenance
-**Student:** `[YOUR FULL NAME]` — Matric No: `[YOUR MATRIC NUMBER]`
+**Student:** Ojekale David Akinola — Matric No: 2024/B/SENG/0241
 **Repository:** <https://github.com/theGhostD/sen401-inventory>
 
 ## 1. Objective
